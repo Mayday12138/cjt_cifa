@@ -1,7 +1,7 @@
 import sys
 #建关键字表
 list=[]
-line = sys.stdin.readline()
+
 #print(dict_op,dict_key)
 #分别生成小写字母表，大写字母表，数字表
 letter_u = [chr(i) for i in range(97, 123)]
@@ -135,11 +135,8 @@ def deal():
 
 
 
-while True:
+for line in sys.stdin:
     list= line.split()
     deal()
-    try:
-        line = sys.stdin.readline()
-    except:
-        exit(0)
-    #print(list_new)
+    if not line:
+        break
