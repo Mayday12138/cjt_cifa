@@ -138,7 +138,8 @@ def deal():
 while True:
     list= line.split()
     deal()
-    line = sys.stdin.readline()
-    if  line==None:
+    try:
+        line = sys.stdin.readline()
+    except:
         exit(0)
     #print(list_new)
