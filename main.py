@@ -110,6 +110,9 @@ for item in list:
                         step = 2
                         print(dict_op["=="],end='\n')
                         token = ''
+                    else:
+                        print(dict_op[token])
+                        token = ''
 
                 else:
                     print(dict_op[token])
