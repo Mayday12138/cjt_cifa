@@ -95,14 +95,25 @@ for item in list:
                     token = ''
 
                 #如果当前token是标识符
-                if flag_t == 0 and len(token) != 0:
-                    print('Ident(', token,')',end='\n',sep='')
+                elif flag_t == 0 and len(token) != 0:
+                    if token in dict_key.keys():
+                        print(dict_key[token],end='\n',sep='')
+                    else:
+                        print('Ident(', token,')',end='\n',sep='')
                     token = ''
 
                 flag_t = 0
                 token = t
-                print(dict_op[token])
-                token = ''
+
+                if t == '=' and i <= len(item) - 1 - 1:
+                    if item[i + 1] == '=':
+                        step = 2
+                        print(dict_op["=="],end='\n')
+                        token = ''
+
+                else:
+                    print(dict_op[token])
+                    token = ''
 
 
 
