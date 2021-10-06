@@ -139,6 +139,6 @@ while True:
     list= line.split()
     deal()
     line = sys.stdin.readline()
-    if not line:
+    if line==None:
         break
     #print(list_new)
