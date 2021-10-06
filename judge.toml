@@ -1,7 +1,7 @@
-[jobs.pascal_lex]
+[jobs.lexer]
 
 image = { source = "dockerfile", path = ".", tag = "pascal-lex-example" }
 
 run = [
-  "cat $input | main.py",
+  "cat $input | python main.py",
 ]
