@@ -40,7 +40,8 @@ dict_op={
 #分别生成小写字母表，大写字母表，数字表
 letter_u = [chr(i) for i in range(97, 123)]
 letter_s = [chr(i) for i in range(65, 91)]
-letter = letter_s+letter_u
+xiahua =['_']
+letter = letter_s+letter_u+xiahua
 digit = [chr(i) for i in range(48, 58)]
 
 flag = 0 #flag用于标记当前item是否位于注释内容中，取0代表不在注释内容中，取1代表在注释内容中
