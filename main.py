@@ -128,6 +128,7 @@ def deal():
 
                 else:
                     print('Err\n')
+                    exit(0)
                 break
 
             i += step
