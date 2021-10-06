@@ -7,7 +7,7 @@ line = sys.stdin.readline()
 letter_u = [chr(i) for i in range(97, 123)]
 letter_s = [chr(i) for i in range(65, 91)]
 letter = letter_s+letter_u+['_']
-digit = [chr(i) for i in range(48, 58)]
+digit = ['0','1','2','3','4','5','6','7','8','9']
 
 flag = 0 #flag用于标记当前item是否位于注释内容中，取0代表不在注释内容中，取1代表在注释内容中
 err = 0 #err用于标记当前语法中是否有错误，取0表示无，取1表示有
@@ -139,6 +139,6 @@ while True:
     list= line.split()
     deal()
     line = sys.stdin.readline()
-    if line==None:
-        break
+    if  line==None:
+        exit(0)
     #print(list_new)
